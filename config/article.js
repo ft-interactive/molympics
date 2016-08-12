@@ -13,11 +13,11 @@ export default _ => ({ // eslint-disable-line
 
   headline: 'Who (or what) is faster than Mo Farah?',
 
-  summary: 'Runners, swimmers, cyclists and animals: race them all against the London 2012 champion at full speed',
+  summary: 'Runners, swimmers, cyclists and animals: race them all against the Olympic champion at full speed',
 
   topic: {
     name: 'Olympic Games',
-    url: 'https://next.ft.com/stream/topicsId/ZDhiMGRlMzYtYzI2Zi00NDJmLWJhMmItOTU4YTE2N2UwYTlm-VG9waWNz',
+    url: 'http://www.ft.com/rio-olympics',
   },
 
   // relatedArticle: {

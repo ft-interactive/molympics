@@ -104,7 +104,7 @@ const options = [
   },
   {
     name: 'dolphin',
-    text: 'Bottlenose Dolphin',
+    text: 'Bottlenose dolphin',
     info: '',
     time: 41.24,
     color: '#2e6e9e',
