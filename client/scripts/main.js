@@ -3,7 +3,6 @@ import Snap from 'snapsvg';
 let lapCount = 0;
 let runningAnimation;
 let runningAnimation2;
-let durationRemaining;
 let moPosition = 0;
 let runner2Position = 0;
 let runner2Time;
@@ -25,9 +24,12 @@ const tweetLaps = document.querySelector('#tweet-laps');
 const tweetButton = document.querySelector('#tweet-this');
 const tweetInputText = document.querySelector('#tweet-input-text');
 
-const legendMo = Snap('#legend-mo').circle(5, 5, 5).attr({ fill: '#f6801a' });
+const legendMo = Snap('#legend-mo').circle(5, 5, 5)
+    .attr({ fill: '#f6801a' });
 
-const legendRunner2 = Snap('#legend-runner2').circle(5, 5, 5).attr({ fill: '#555' }).addClass('hidden');
+const legendRunner2 = Snap('#legend-runner2').circle(5, 5, 5)
+    .attr({ fill: '#555' })
+    .addClass('hidden');
 
 const s = Snap('#svg');
 
@@ -86,7 +88,7 @@ const options = [
     time: 57.435,
     color: '#777777',
   },
-        {
+  {
     name: 'wiggins',
     text: 'B. Wiggins (2008 4,000m pursuit)',
     info: 'Bradley Wiggins cycled at an average pace of 25.5 seconds per 400 metres at London 2012',
@@ -127,7 +129,7 @@ const options = [
     info: 'Recent research suggests T-Rex was capable of running 400 metres in 50 seconds',
     time: 50,
     color: '#458b00',
-  }
+  },
 ];
 
 const track = s.select('#running_lane')
@@ -169,7 +171,7 @@ const timerDisplay = s.text(98.4, 207, '00:00:00:00:0')
       class: 'timer',
       id: 'timer-display',
       textAnchor: 'start',
-    })
+    });
 
 // const timerBounds = timerDisplay.getBBox();
 
@@ -210,9 +212,9 @@ function count() {
     }
   }
 
-  timerDisplay.node.textContent = '00' +
-      ':' + (hours ? (hours > 9 ? hours : '0' + hours) : '00') +
-      ':' + (minutes ? (minutes > 9 ? minutes : '0' + minutes) : '00') +
+  timerDisplay.node.textContent = (days > 9 ? days : '0' + days) +
+      ':' + (hours > 9 ? hours : '0' + hours) +
+      ':' + (minutes > 9 ? minutes : '0' + minutes) +
       ':' + (seconds > 9 ? seconds : '0' + seconds) +
       ':' + deciseconds;
 }
@@ -321,7 +323,7 @@ dropdown.addEventListener('change', () => {
     legendRunner2Text.classList.remove('hidden');
 
     legendRunner2.attr({
-      fill: options[dropdown.selectedIndex].color
+      fill: options[dropdown.selectedIndex].color,
     }).removeClass('hidden');
 
     runner2.removeClass('hidden')
