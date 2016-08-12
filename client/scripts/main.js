@@ -144,13 +144,13 @@ const mo = s.circle(startingLine.x, startingLine.y, 12)
       strokeWidth: '2px',
     });
 
-const timerBorder = s.rect(0, 0, 0, 0)
-    .attr({
-      stroke: '#333',
-      fill: '#e9decf',
-      rx: 5,
-      ry: 5,
-    });
+// const timerBorder = s.rect(0, 0, 0, 0)
+//     .attr({
+//       stroke: '#333',
+//       fill: '#e9decf',
+//       rx: 5,
+//       ry: 5,
+//     });
 
 // const infoText = s.text(98.4, 227, 'info text')
 //     .attr({
@@ -164,14 +164,16 @@ const timerDisplay = s.text(98.4, 207, '00:00:00:00:0')
       textAnchor: 'start',
     })
 
-const timerBounds = timerDisplay.getBBox();
+// const timerBounds = timerDisplay.getBBox();
 
-timerBorder.attr({
-  x: timerBounds.x - 5,
-  y: timerBounds.y,
-  width: timerBounds.w + 15,
-  height: timerBounds.h,
-});
+// const timerBounds = document.querySelector('#timer-display').getBoundingClientRect();
+
+// timerBorder.attr({
+//   x: timerDisplay.getBBox().x - 5,
+//   y: timerDisplay.getBBox().y,
+//   width: timerBounds.width,
+//   height: timerBounds.height,
+// });
 
 // const lapCounter = s.text(312.5, 237, 'Mo laps completed: 0')
 //     .attr({
@@ -257,7 +259,7 @@ const animateAlongPath = (path, el, start, duration, easing, callback) => {
 
 const animateAlongPath2 = (path, el, start, duration, easing, callback) => {
   const len = Snap.path.getTotalLength(path);
-  const pcTravelled = (runner2Position / len) * 100;
+  const pcTravelled = (start / len) * 100;
   const pcRemaining = 100 - pcTravelled;
   // const elBB = el.getBBox();
   // const elCenter = {

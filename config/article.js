@@ -11,9 +11,9 @@ export default _ => ({ // eslint-disable-line
   //       new Date('2016-05-17T17:11:22Z')
   publishedDate: new Date('2016-08-12T12:00:00Z'),
 
-  headline: 'Who is faster than Mo Farah?',
+  headline: 'Who (or what) is faster than Mo Farah?',
 
-  summary: 'From Sebastian Coe to Tyrannosaurus Rex - race them all against Mo at full speed',
+  summary: 'Runners, swimmers, cyclists and animals: race them all against the London 2012 champion at full speed',
 
   topic: {
     name: 'Olympic Games',
