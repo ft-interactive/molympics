@@ -395,3 +395,27 @@ tweetButton.addEventListener('click', (el) => {
 });
 
 document.dispatchEvent(new CustomEvent('ig.Loaded'));
+
+// Onward Journey tags
+const ojTags = document.querySelectorAll('onward-journey');
+[...ojTags].forEach((tag) => {
+  if (!tag.classList.contains('is-rendered')) {
+    const uuid = tag.dataset.uuid;
+    const layout = tag.dataset.layout || 'default';
+    const limit = tag.dataset.count || 6;
+    const type = tag.dataset.type || 'thing';
+    const urlBase = 'https://ft-ig-onwardjourney.herokuapp.com';
+    const url = `${urlBase}/${type}/${uuid}?layout=${layout}&limit=${limit}&type=html`;
+    if (uuid) {
+      fetch(url)
+      .then((res) => res.text())
+      .then((html) => {
+        tag.innerHTML = html;
+      });
+    } else {
+      throw new Error('No UUID specified; onward journey ignored.');
+    }
+  }
+
+  tag.classList.add('is-rendered');
+});
