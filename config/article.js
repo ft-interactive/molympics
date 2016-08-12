@@ -47,7 +47,7 @@ export default _ => ({ // eslint-disable-line
   */
   twitterCard: 'summary',
 
-  image: '',
+  image: 'https://image.webservices.ft.com/v1/images/raw/ftcms:0f13bde2-609f-11e6-ae3f-77baadeb1c93?source=ig',
 
   // optional social meta data
   // twitterCreator: '@individual's_account',
