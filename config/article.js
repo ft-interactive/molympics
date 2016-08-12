@@ -5,7 +5,7 @@ export default _ => ({ // eslint-disable-line
 
   // canonical URL of the published page
   // https://ig.ft.com/sites/molympics get filled in by the ./configure script
-  url: 'https://ig.ft.com/sites/molympics',
+  url: 'https://ig.ft.com/mo-farah-races-a-t-rex/',
 
   // To set an exact publish date do this:
   //       new Date('2016-05-17T17:11:22Z')
@@ -46,6 +46,8 @@ export default _ => ({ // eslint-disable-line
         https://dev.twitter.com/cards/markup
   */
   twitterCard: 'summary',
+
+  image: '',
 
   // optional social meta data
   // twitterCreator: '@individual's_account',

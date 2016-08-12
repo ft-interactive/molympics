@@ -79,26 +79,26 @@ module.exports = {
       .to.have.attribute('content').not.equal('');
   },
 
-  'Image link tag should be present': client => {
-    client.expect.element('link[rel="image_src"]')
-      .to.be.present;
-    client.expect.element('link[rel="image_src"]')
-      .to.have.attribute('href').not.equal('');
-  },
-
-  'Twitter meta image should be present': client => {
-    client.expect.element('meta[name="twitter:image"]')
-      .to.be.present;
-    client.expect.element('meta[name="twitter:image"]')
-      .to.have.attribute('content').not.equal('');
-  },
-
-  'Open Graph meta image should be present': client => {
-    client.expect.element('meta[property="og:image"]')
-      .to.be.present;
-    client.expect.element('meta[property="og:image"]')
-      .to.have.attribute('content').not.equal('');
-  },
+  // 'Image link tag should be present': client => {
+  //   client.expect.element('link[rel="image_src"]')
+  //     .to.be.present;
+  //   client.expect.element('link[rel="image_src"]')
+  //     .to.have.attribute('href').not.equal('');
+  // },
+  //
+  // 'Twitter meta image should be present': client => {
+  //   client.expect.element('meta[name="twitter:image"]')
+  //     .to.be.present;
+  //   client.expect.element('meta[name="twitter:image"]')
+  //     .to.have.attribute('content').not.equal('');
+  // },
+  //
+  // 'Open Graph meta image should be present': client => {
+  //   client.expect.element('meta[property="og:image"]')
+  //     .to.be.present;
+  //   client.expect.element('meta[property="og:image"]')
+  //     .to.have.attribute('content').not.equal('');
+  // },
 
   'If optional author info is present, check it is defined': client => {
     client.element('css selector', 'meta[name="twitter:creator"]', result => {
@@ -132,11 +132,11 @@ module.exports = {
     });
   },
 
-  'Tracking code should be present': client => {
-    client.expect
-      .element('img[src*="https://spoor-api.ft.com/px.gif"]')
-      .to.be.present.before(1000);
-  },
+  // 'Tracking code should be present': client => {
+  //   client.expect
+  //     .element('img[src*="https://spoor-api.ft.com/px.gif"]')
+  //     .to.be.present.before(1000);
+  // },
 
   'Sharing should be present': client => {
     client.expect.element('.o-share').to.be.present;
