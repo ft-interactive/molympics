@@ -214,7 +214,7 @@ function timer() {
 
 const animateAlongPath = (path, el, start, duration, easing, callback) => {
   const len = Snap.path.getTotalLength(path);
-  const pcTravelled = (moPosition / len) * 100;
+  const pcTravelled = (start / len) * 100;
   const pcRemaining = 100 - pcTravelled;
   // const elBB = el.getBBox();
   // const elCenter = {
