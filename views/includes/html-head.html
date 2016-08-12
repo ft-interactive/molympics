@@ -18,7 +18,7 @@
 <link inline rel="stylesheet" href="styles/top.css">
 
 <link rel="stylesheet" href="https://origami-build.ft.com/v2/bundles/css?modules=n-normalize@^1,o-fonts@^2">
-<link rel="stylesheet" href="https://origami-build.ft.com/v2/bundles/css?modules=o-grid@^4,o-typography@^4.2">
+<link rel="stylesheet" href="https://origami-build.ft.com/v2/bundles/css?modules=o-grid@^4,o-typography@^4.2,o-buttons@^4.0.2,o-forms@^2.0.5">
 <link rel="stylesheet" href="styles/main.css">
 {% if stylesheets %}{% for stylesheet in stylesheets %}
 <link rel="stylesheet" href="{{ stylesheet }}">
@@ -37,7 +37,7 @@
 <script type="application/json" data-o-errors-config>
 {"sentryEndpoint": "https://ddbd80489ff549538250bbe37fa52bbd@app.getsentry.com/71130"}
 </script>
-<script async src="https://origami-build.ft.com/v2/bundles/js?modules=o-errors@^3.4.0"></script>
+<script async src="https://origami-build.ft.com/v2/bundles/js?modules=o-errors@^3.4.0,o-buttons@^4.0.2,o-forms@^2.0.5"></script>
 {% endif %}
 
 <title>{{ title | default(headline, true) }} &mdash; FT.com</title>

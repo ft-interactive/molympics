@@ -9,35 +9,34 @@ export default _ => ({ // eslint-disable-line
 
   // To set an exact publish date do this:
   //       new Date('2016-05-17T17:11:22Z')
-  publishedDate: new Date(),
+  publishedDate: new Date('2016-08-12T12:00:00Z'),
 
-  headline: 'Politics and the English Language',
+  headline: 'Who is faster than Mo Farah?',
 
-  summary: 'Political language is designed to make lies sound truthful' +
-           'and murder respectable, and to give an appearance of solidity to pure wind',
+  summary: 'From Sebastian Coe to Tyrannosaurus Rex - race them all against Mo at full speed',
 
   topic: {
-    name: 'Starter Kit',
-    url: '/foo',
+    name: 'Olympic Games',
+    url: 'https://next.ft.com/stream/topicsId/ZDhiMGRlMzYtYzI2Zi00NDJmLWJhMmItOTU4YTE2N2UwYTlm-VG9waWNz',
   },
 
-  relatedArticle: {
-    text: 'Related article »',
-    url: 'https://en.wikipedia.org/wiki/Politics_and_the_English_Language',
-  },
+  // relatedArticle: {
+  //   text: 'Related article »',
+  //   url: 'https://en.wikipedia.org/wiki/Politics_and_the_English_Language',
+  // },
 
   // Byline can by a plain string, markdown, or array of authors
   // if array of authors, url is optional
   byline: [
-    { name: 'Author One', url: '/foo/bar' },
-    { name: 'Author Two' },
+    { name: 'Alan Smith', url: 'https://twitter.com/theboysmithy' },
+    { name: 'David Blood', url: 'https://twitter.com/davidbjourno' },
   ],
 
   // Appears in the HTML <title>
   title: '',
 
   // meta data
-  description: '',
+  description: 'From Sebastian Coe to Tyrannosaurus Rex - race them all against Mo at full speed',
 
   /*
   TODO: Select Twitter card type -

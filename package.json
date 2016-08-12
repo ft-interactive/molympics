@@ -71,5 +71,8 @@
     "start": "nodemon --watch gulpfile.babel.js --exec 'gulp watch'",
     "test": "npm run build",
     "preflight": "gulp test:preflight"
+  },
+  "dependencies": {
+    "snapsvg": "^0.4.0"
   }
 }
