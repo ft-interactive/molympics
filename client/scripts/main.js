@@ -93,21 +93,28 @@ const options = [
     time: 25.5,
     color: '#777777',
   },
-     {
+  {
     name: 'yang',
     text: 'S. Yang (2012 400m freestyle)',
     info: 'Swimming is a slow activity for humans - Sun Yang\'s swim of 3 minutes 40 seconds translates poorly onto the track',
     time: 220.14,
     color: '#777777',
   },
-    {
+  {
+    name: 'dolphin',
+    text: 'Bottlenose Dolphin',
+    info: '',
+    time: 41.24,
+    color: '#2e6e9e',
+  },
+  {
     name: 'winningbrew',
     text: 'Racehorse – Winning Brew (2008)',
     info: 'The world\'s fastest racehorse over 2 furlongs: 400m pace is 20.5 seconds ',
     time: 20.46766169,
     color: '#777777',
   },
-        {
+  {
     name: 'brettlee',
     text: 'Greyhound – Brett Lee (2001)',
     info: 'The greyhound\'s pace over 515 metres means 400 metres would take 22.45 seconds',
@@ -119,7 +126,7 @@ const options = [
     text: 'T. Rex (c. 66m years BC)',
     info: 'Recent research suggests T-Rex was capable of running 400 metres in 50 seconds',
     time: 50,
-    color: '#777777',
+    color: '#458b00',
   }
 ];
 
@@ -225,7 +232,8 @@ const animateAlongPath = (path, el, start, duration, easing, callback) => {
   // };
 
   duration = (53.48 / 100) * pcRemaining;
-  console.log(duration);
+
+  // console.log(duration);
 
   runningAnimation = Snap.animate(start, len, (value) => {
     const movePoint = Snap.path.getPointAtLength(path, value);
