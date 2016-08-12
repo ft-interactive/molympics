@@ -206,12 +206,10 @@ function count() {
       ':' + (minutes ? (minutes > 9 ? minutes : '0' + minutes) : '00') +
       ':' + (seconds > 9 ? seconds : '0' + seconds) +
       ':' + deciseconds;
-
-  timer();
 }
 
 function timer() {
-  t = setTimeout(count, 100);
+  t = setInterval(count, 100);
 }
 
 const animateAlongPath = (path, el, start, duration, easing, callback) => {
@@ -225,6 +223,7 @@ const animateAlongPath = (path, el, start, duration, easing, callback) => {
   // };
 
   duration = (53.48 / 100) * pcRemaining;
+  console.log(duration);
 
   runningAnimation = Snap.animate(start, len, (value) => {
     const movePoint = Snap.path.getPointAtLength(path, value);
@@ -348,7 +347,7 @@ function raceStart() {
 
     animationRunning = false;
 
-    clearTimeout(t);
+    clearInterval(t);
 
     runningAnimation.stop();
     if (runner2Present) runningAnimation2.stop();
