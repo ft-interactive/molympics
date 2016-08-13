@@ -36,7 +36,7 @@ export default _ => ({ // eslint-disable-line
   title: '',
 
   // meta data
-  description: 'From Sebastian Coe to Tyrannosaurus Rex - race them all against Mo at full speed',
+  description: 'Runners, swimmers, cyclists and animals: race them all against the Olympic champion at full speed',
 
   /*
   TODO: Select Twitter card type -
