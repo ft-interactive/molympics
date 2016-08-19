@@ -40,24 +40,24 @@ const options = [
     time: 'none',
   },
   {
+    name: 'bolt',
+    text: 'U. Bolt (2016, 200m)',
+    info: ' ',
+    time: 39.56,
+    color: '#777777',
+  },
+  {
+    name: 'niekerk',
+    text: 'W. van Niekerk (2016, 400m)',
+    info: ' ',
+    time: 43.03,
+    color: '#777777',
+  },
+    {
     name: 'burke',
     text: 'T. Burke (1896, 400m)',
     info: 'Thomas Burke ran the first Olympic 400 metres final in 54.2 seconds',
     time: 54.2,
-    color: '#777777',
-  },
-  {
-    name: 'johnson',
-    text: 'M. Johnson (1996, 400m)',
-    info: 'Michael Johnson ran 400 metres in 43.49 seconds in 1996',
-    time: 43.49,
-    color: '#777777',
-  },
-  {
-    name: 'ovett',
-    text: 'S. Ovett (1980, 800m)',
-    info: 'Steve Ovett\'s average pace over 2 laps was 52.7 seconds',
-    time: 52.7,
     color: '#777777',
   },
   {
@@ -77,28 +77,28 @@ const options = [
   {
     name: 'perec',
     text: 'M.-J. Pérec (1996, 400m women)',
-    info: 'Marie-José Pérec ran 400 metres in 48.25 seconds at Atlanta 1996',
+    info: ' ',
     time: 48.25,
     color: '#777777',
   },
   {
     name: 'jelimo',
     text: 'P. Jelimo (2008, 800m women)',
-    info: 'Pamela Jelimo\'s average lap speed at Beijing 2008 was 57.44 seconds',
+    info: ' ',
     time: 57.435,
     color: '#777777',
   },
   {
     name: 'wiggins',
     text: 'B. Wiggins (2008 4,000m pursuit)',
-    info: 'Bradley Wiggins cycled at an average pace of 25.5 seconds per 400 metres at London 2012',
+    info: ' ',
     time: 25.5,
     color: '#777777',
   },
   {
     name: 'yang',
     text: 'S. Yang (2012 400m freestyle)',
-    info: 'Swimming is a slow activity for humans - Sun Yang\'s swim of 3 minutes 40 seconds translates poorly onto the track',
+    info: ' ',
     time: 220.14,
     color: '#777777',
   },
@@ -112,25 +112,29 @@ const options = [
   {
     name: 'winningbrew',
     text: 'Racehorse – Winning Brew (2008)',
-    info: 'The world\'s fastest racehorse over 2 furlongs: 400m pace is 20.5 seconds ',
+    info: ' ',
     time: 20.46766169,
     color: '#777777',
   },
   {
     name: 'brettlee',
     text: 'Greyhound – Brett Lee (2001)',
-    info: 'The greyhound\'s pace over 515 metres means 400 metres would take 22.45 seconds',
+    info: ' ',
     time: 22.44660194,
     color: '#777777',
   },
   {
     name: 't-rex',
     text: 'T. Rex (c. 66m years BC)',
-    info: 'Recent research suggests T-Rex was capable of running 400 metres in 50 seconds',
+    info: ' ',
     time: 50,
     color: '#458b00',
   },
+    
 ];
+
+
+
 
 const track = s.select('#running_lane')
     .attr({ strokeWidth: 2 });
@@ -233,7 +237,7 @@ const animateAlongPath = (path, el, start, duration, easing, callback) => {
   //   y: elBB.y + (elBB.height / 2),
   // };
 
-  duration = (53.48 / 100) * pcRemaining;
+  duration = (52.94 / 100) * pcRemaining;
 
   // console.log(duration);
 
